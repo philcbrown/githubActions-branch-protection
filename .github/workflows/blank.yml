@@ -34,4 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          exit 1
+
+  build-two:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
